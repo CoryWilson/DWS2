@@ -1,0 +1,150 @@
+/*custom css*/
+
+body {
+  background: url("../img/textures/bedge-grunge.png") hsla(47, 41%, 93%, 1) repeat;
+  color: hsla(160, 10%, 13%, 1);
+  padding: 50px 0 20px 0;
+  font-family: 'Raleway', sans-serif;
+}
+.bold {
+ font-weight: bold;
+}
+.shadow {
+  box-shadow: 2px 2px 10px 3px hsla(154, 19%, 15%, 1);
+}
+hr {
+  border-top: 1px solid hsla(154, 19%, 15%, 0.5);
+}
+
+
+/********************
+  navbar
+********************/
+.navbar-default {
+  background: url("../img/textures/brushed-alum-dark.png") hsla(154, 19%, 15%, 1) repeat;
+  border-bottom: 5px solid hsla(155, 15%, 19%, .5);
+  margin-bottom: 20px;
+}
+.navbar-default a.navbar-brand, .navbar-default .navbar-nav>li>a {
+  color: hsla(42, 52%, 88%, 1);
+}
+.navbar-default a.navbar-brand:hover, .navbar-default .navbar-nav>li>a:hover {
+  color: hsla(9, 44%, 59%, 1);
+}
+.navbar-default .navbar-nav>.active>a {
+  color: hsla(160, 6%, 10%, 1);
+  background: url("../img/textures/brushed-alum-dark.png") hsla(42, 52%, 88%, 1) repeat;
+}
+.navbar-default .navbar-nav>.active>a:hover {
+  color: hsla(160, 6%, 10%, 1);
+  background: url("../img/textures/brushed-alum-dark.png") hsla(9, 44%, 59%, 1) repeat;
+}
+/*navbar stack*/
+.navbar-default .navbar-toggle {
+  border: none;
+}
+.navbar-default .navbar-toggle:hover {
+  background: hsla(50, 39%, 60%, 1);
+}
+/*search*/
+.navbar-default .btn-default {
+  background: hsla(28, 80%, 72%, 1);
+  border: hsla(29, 61%, 66%, 1);
+}
+
+
+/********************
+  jumbotron
+********************/
+.jumbotron {
+  background: url("../img/textures/cubes.png") hsla(152, 15%, 47%, 1) repeat;
+  border-bottom: 5px solid hsla(153, 15%, 35%, .5);
+  overflow: hidden;
+}
+.btn-primary {
+  background: hsla(28, 80%, 72%, 1);
+  border: hsla(29, 61%, 66%, 1);
+  color: hsla(160, 10%, 13%, 1);
+}
+.btn-primary:hover {
+  background: hsla(9, 41%, 57%, 1);
+  border: hsla(9, 35%, 54%, 1);
+  color: hsla(160, 10%, 13%, 1);
+}
+
+/********************
+  row1/discography
+********************/
+div.col-md-4 p, div.col-sm6 p {
+  padding-top: 20px;
+}
+
+/********************
+  row2/about
+********************/
+.about {
+  background: url("../img/textures/bedge-grunge.png") hsla(47, 39%, 75%, 0.8) repeat;
+  padding: 0 0 30px 0;
+}
+.about h2 {
+  padding: 0 30px;
+}
+
+/********************
+  row3/table & form
+********************/
+.tablenform {
+  padding-top: 30px;
+}
+
+/********************
+  row2/table
+********************/
+table {
+  background: url("../img/textures/bedge-grunge.png") hsla(47, 41%, 93%, 1) repeat;
+}
+thead {
+  background: url("../img/textures/brushed-alum-dark.png") hsla(154, 19%, 15%, 1) repeat;
+  color: hsla(159, 57%, 94%, 1);
+}
+
+/********************
+  row2/form
+********************/
+form>button.btn-default {
+  background: hsla(28, 80%, 72%, 1);
+  border: hsla(29, 61%, 66%, 1);
+}
+form>button.btn-default:hover {
+  background: hsla(9, 41%, 57%, 1);
+  border: hsla(9, 35%, 54%, 1);
+}
+
+/********************
+  footer
+********************/
+footer {
+  text-align: center;
+}
+
+/********************
+  media queries
+********************/
+
+@media screen and (max-width: 768px) {
+  .tablenform {
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 836px) and (max-width: 1185px) {
+  .jumbotron h1 {
+    font-size: 51px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 835px) {
+  .jumbotron h1 {
+    font-size: 45px;
+  }
+}

@@ -1,0 +1,68 @@
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  font: 62.5%/1.5 "Helvetica Neue" , Arial, Helvetica;
+}
+
+/* target/context = result */
+/* 36(h1)/16(body) = 2.25ems */
+
+h1 {
+  font-size: 3.6em; /*36px*/
+}
+
+h1 a {
+  font-size: .5em; /*18px*/
+}
+
+h2 {
+
+}
+
+p{
+  font-size: 1.7em;/*17px*/
+  padding: 5px;
+}
+
+section {
+  background: #999;
+  width: 61.25%; /*588px/960px*/
+  margin-right: 2.08333333%;/*20px/960px*/
+  margin-bottom: 10px;
+  padding: 1.70068027%; /*10px/588px*/
+  float: left;
+}
+
+aside {
+  background: #fff;
+  width: 30.625%; /*294px/960px*/
+  float: left;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/*Tablet Portrait size to standard 960 (devices and browsers) */
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  body {
+    background: pink;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  body {
+    background: navy;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  body {
+    background: lime;
+  }
+  section, aside {
+    float: none;
+    width: 90%;
+  }
+}

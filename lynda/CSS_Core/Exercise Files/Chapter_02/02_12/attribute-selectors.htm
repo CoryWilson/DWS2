@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Attribute selectors</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+body {
+	font-family: Georgia;
+	font-size: 90%;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	margin: 1em 0;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+/*add styles here*/
+/*Attribute Selectors*/
+
+/* ~= targets full attribute values seperated by white space */
+/* *= targets literal string values */
+
+a[href$="pdf"]{ /*looks for anything that ends with pdf */
+	color: green;
+}
+a[title*="visit"]{ /*anything that has visit anywhere in the title*/
+	color: blue;
+}
+a[href^="http://"]{ /*looks for anyting that starts with http://*/
+										/*good way to target external links*/
+	color: red;
+}
+a[href*="_docs"]{ /*looks for anything within the docs folder*/
+	
+}
+
+/*look for white space seperated list including this character*/
+p[class~="red"]{
+	color: red;
+}
+
+
+
+
+</style>
+</head>
+<body>
+	<ul>
+	  <li>
+			<a href="http://www.lynda.com" title="visit lynda.com">This is an external link</a>
+		</li>
+	  <li>
+			<a href="about.htm" title="visit about us">This is an local link</a>
+		</li>
+	  <li>
+			<a href="_docs/plan.pdf" title="download our annual report">This is a link to a resource</a>
+		</li>
+	</ul>
+	<p class="red blue green">This paragraph has the classes red, blue, and green. </p>
+	<p class="red green">This paragraph has the classes red, and green.</p>
+	<p class="red blue">This paragraph has the classes red, and blue.</p>
+	<p class="red">This paragraph ony has the class red.</p>
+</body>
+</html>

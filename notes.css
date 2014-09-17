@@ -1,0 +1,77 @@
+/*
+----------------Class 1 Notes------------------
+
+  -css3 selectors
+  -cascade
+    -inheritance
+    -specificity
+
+  -responsive web design intro
+
+  -jeffrey zeldman
+    -http://www.zeldman.com/
+    -happy cog
+    -follow blogs
+  -ethan marcotte
+    -http://ethanmarcotte.com/
+    -rwd pioneer
+
+  -http://mediaqueri.es
+*/
+
+/*
+----------------Class 2 Notes------------------
+
+  -Basics of Responsive Design
+*/
+
+/*
+----------------Class 3 Notes------------------
+
+  -Goals:  -Learn
+             -History
+             -Roster
+           -Monetize
+             -Feature Into Call To Action
+             -Tickets
+             -Merch
+  -Make it look less like a template
+  -Add Personal Flair
+  -No Figures
+    -Use img and spans
+*/
+
+/*
+----------------Class 4 Notes------------------
+
+  -Bootstrap day!
+*/
+
+/*
+----------------Class 5 Notes------------------
+
+  -Talked about foundation
+
+  -Float left so content can wrap on the right
+  -Float right so content can wrap on the left
+
+  position:
+    static
+    relative
+      - everything behaves the same
+      - space is still respected by other elements
+      - removed from document flow
+      - moved based on where it used to be in the flow
+    absolute
+      - all other elements treat it like it never existed
+      - using the viewport for its point of origin
+      - put *position: relative* on parent element to keep it somewhat contained
+      - don't use for layout!!!
+      - line-height: 30px trick for centering vertically in nav
+    fixed
+      - used for left aligned nav box
+
+  position removed from document flow
+
+  subtlepatterns.com
+*/

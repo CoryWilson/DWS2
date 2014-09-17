@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>specificity</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+aside, article, section, header, footer, nav {
+	display: block;
+}
+body {
+	font-family: Georgia;
+	font-size: 120%;
+}
+
+/*
+	specificity values
+
+	element: 1
+	class: 10
+	id: 100
+	inline: 1000
+
+*/
+
+#mainContent p {
+	/* specificity: 101 */
+	color: red;
+}
+p {
+	/* specificity: 1 */
+	color: blue;
+}
+.green {
+	/* specificity: 10 */
+	color: green;
+}
+strong {
+	/* specificity: 1 */
+	color: purple;
+}
+strong.green {
+	/* specificity: 11 */
+	color: purple;
+}
+
+</style>
+</head>
+<body>
+	<section id="mainContent">
+		<p>I am a paragraph nested inside a section. I also have a <strong class="green">strong tag</strong> nested inside of me.</p>
+	</section>
+</body>
+</html>

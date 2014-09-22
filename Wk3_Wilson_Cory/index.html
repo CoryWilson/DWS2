@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Project 3 HTML5 Forms</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="img/logo.png" alt="#" />
+      </div>
+      <h2>Car Service Appointment Form</h2>
+    </header>
+    <div class="wrapper">
+      <form action="#">
+        <div class="section">
+          <h3>Contact Information</h3>
+          <div>
+            <label class="title" id="fname">First Name</label>
+            <div>
+              <input type="text" name="fname" size="30" maxlength="30"/>
+            </div>
+          </div>
+          <div>
+            <label class="title" id="lname">Last Name</label>
+            <div>
+              <input type="text" name="lname" size="30" maxlength="30"/>
+            </div>
+          </div>
+          <div>
+            <label class="title" id="address">Address</label>
+            <div>
+              <input type="text" name="address" size="30" maxlength="50"/>
+            </div>
+          </div>
+          <div>
+            <label class="title" id="city">City</label>
+            <div>
+              <input type="text" name="city" size="30" maxlength="30"/>
+            </div>
+          </div>
+          <div>
+            <label class="title" id="state">State</label>
+              <div>
+                <select id="states" name="states">
+                  <option value="" selected="selected">Select a State</option>
+                	<option value="AL">Alabama</option>
+                	<option value="AK">Alaska</option>
+                	<option value="AZ">Arizona</option>
+                	<option value="AR">Arkansas</option>
+                	<option value="CA">California</option>
+                	<option value="CO">Colorado</option>
+                	<option value="CT">Connecticut</option>
+                	<option value="DE">Delaware</option>
+                	<option value="DC">District Of Columbia</option>
+                	<option value="FL">Florida</option>
+                	<option value="GA">Georgia</option>
+                	<option value="HI">Hawaii</option>
+                	<option value="ID">Idaho</option>
+                	<option value="IL">Illinois</option>
+                	<option value="IN">Indiana</option>
+                	<option value="IA">Iowa</option>
+                	<option value="KS">Kansas</option>
+                	<option value="KY">Kentucky</option>
+                	<option value="LA">Louisiana</option>
+                	<option value="ME">Maine</option>
+                	<option value="MD">Maryland</option>
+                	<option value="MA">Massachusetts</option>
+                	<option value="MI">Michigan</option>
+                	<option value="MN">Minnesota</option>
+                	<option value="MS">Mississippi</option>
+                	<option value="MO">Missouri</option>
+                	<option value="MT">Montana</option>
+                	<option value="NE">Nebraska</option>
+                	<option value="NV">Nevada</option>
+                	<option value="NH">New Hampshire</option>
+                	<option value="NJ">New Jersey</option>
+                	<option value="NM">New Mexico</option>
+                	<option value="NY">New York</option>
+                	<option value="NC">North Carolina</option>
+                	<option value="ND">North Dakota</option>
+                	<option value="OH">Ohio</option>
+                	<option value="OK">Oklahoma</option>
+                	<option value="OR">Oregon</option>
+                	<option value="PA">Pennsylvania</option>
+                	<option value="RI">Rhode Island</option>
+                	<option value="SC">South Carolina</option>
+                	<option value="SD">South Dakota</option>
+                	<option value="TN">Tennessee</option>
+                	<option value="TX">Texas</option>
+                	<option value="UT">Utah</option>
+                	<option value="VT">Vermont</option>
+                	<option value="VA">Virginia</option>
+                	<option value="WA">Washington</option>
+                	<option value="WV">West Virginia</option>
+                	<option value="WI">Wisconsin</option>
+                	<option value="WY">Wyoming</option>
+                </select>
+              </div>
+          </div>
+          <div>
+            <label class="title" id="zipcode">Zipcode</label>
+            <div><input type="text" name="zipcode" size="5" maxlength="5" />
+            </div>
+          </div>
+          <div>
+            <label class="title" id="phone">Phone</label>
+            <div>
+              <input type="tel" name="phone" size="10" maxlength="10" />
+            </div>
+          </div>
+          <div>
+            <label class="title" id="email">Email</label>
+            <div>
+              <input type="email" name="email" size="30" maxlength="50" />
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <h3>Car and Service Information</h3>
+          <div>
+            <label>Select Service Representative</label>
+            <div><select name="servicerep" size="4" multiple="multiple">
+                    <option value="a" selected="selected">
+                      Jim Bob Subaruguy
+                    </option>
+                    <option value="b" >
+                      Madeline Suarez
+                    </option>
+                    <option value="c" >
+                      John Doe
+                    </option>
+                    <option value="d" >
+                      Bobby Lee Sue
+                    </option>
+                  </select>
+            </div>
+          </div>
+          <div>
+            <label>Select Model</label>
+            <div>
+              <ul>
+                <li>
+                  <input type="radio" name="model" value="brz"/>BRZ
+                </li>
+                <li>
+                  <input type="radio" name="model" value="impreza" />Impreza
+                </li>
+                <li>
+                  <input type="radio" name="model" value="wrx" />WRX
+                </li>
+                <li>
+                  <input type="radio" name="model" value="legacy" />Legacy
+                </li>
+                <li>
+                  <input type="radio" name="model" value="forester" />Forester
+                </li>
+                <li>
+                  <input type="radio" name="model" value="xv" />XV Crosstek
+                </li>
+                <li>
+                  <input type="radio" name="model" value="outback" />Outback
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div><!--requested services checkbox-->
+            <label>Select Services Required</label>
+            <div>
+              <ul>
+                <li>
+                  <input type="checkbox" name="servicetype" value="oil" checked="checked" />Oil Change
+                </li>
+                <li>
+                  <input type="checkbox" name="servicetype" value="rotate" />Tire Rotation
+                </li>
+                <li>
+                  <input type="checkbox" name="servicetype" value="15k" />15,000 Mile Service
+                </li>
+                <li>
+                  <input type="checkbox" name="servicetype" value="30k" />30,000 Mile Service
+                </li>
+                <li>
+                  <input type="checkbox" name="servicetype" value="60k" />60,000 Mile Service
+                </li>
+                <li>
+              <input type="checkbox" name="servicetype" value="105k"/>105,000 Mile Service
+                </li>
+              </ul>
+            </div>
+          </div><!--end requested services-->
+          <div>
+            <label>Make Appointment</label>
+            <div>
+              <input type="date" name="" />
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <h3>Survey</h3>
+          <div>
+            <label>Rate Your Satisfaction</label>
+            <div><input type="range" name="" min="0" max="100"/></div>
+          </div>
+          <div>
+            <label>Comments or Suggestions</label>
+            <div>
+              <textarea name="textarea" rows="5" cols="25" placeholder="Tell us how we did!">Tell us how we did!
+              </textarea>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
